@@ -26,8 +26,9 @@ dependencies {
 	compile(
             "org.springframework.boot:spring-boot-starter",
             "org.springframework.boot:spring-boot-starter-web",
-            "net.logstash.logback:logstash-logback-encoder:4.11"
-    )
+            "net.logstash.logback:logstash-logback-encoder:4.11",
+			"org.zalando:logbook-spring-boot-starter:1.11.1"
+	)
     compileOnly (
             "org.projectlombok:lombok:1.18.2"
     )

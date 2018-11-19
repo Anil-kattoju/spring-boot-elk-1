@@ -20,6 +20,8 @@ public class RequestIdFilter extends OncePerRequestFilter {
             throws ServletException, IOException {
         String requestId = Optional.ofNullable(request.getHeader(X_REQUEST_ID)).orElse(UUID.randomUUID().toString());
         MDC.put(X_REQUEST_ID, requestId);
-        filterChain.doFilter(request,response);
+        filterChain.doFilter(request, response);
+
     }
+
 }
